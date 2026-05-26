@@ -1,0 +1,274 @@
+\doxysection{Maya\+Mystic.\+File\+Manager.\+Core.\+File\+Manager\+Service Class Reference}
+\hypertarget{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service}{}\label{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service}\index{MayaMystic.FileManager.Core.FileManagerService@{MayaMystic.FileManager.Core.FileManagerService}}
+
+
+Main \doxylink{namespace_maya_mystic_1_1_file_manager}{File\+Manager} service implementation. Provides centralized access to all file operations.  
+
+
+Inheritance diagram for Maya\+Mystic.\+File\+Manager.\+Core.\+File\+Manager\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_af483d5e9d3384e717f638840fbb6eded}{File\+Exists}} (string full\+Path)
+\begin{DoxyCompactList}\small\item\em Checks whether a file exists at the specified path. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_a9d7cf73f2c3a17b31ab201242cfe5f50}{Delete\+File}} (string full\+Path)
+\begin{DoxyCompactList}\small\item\em Deletes the target file from disk. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_ab42a683164ab3d0fa490ad3c81e7d9a0}{Save\+Text}} (string full\+Path, string content)
+\begin{DoxyCompactList}\small\item\em Saves text content to a file. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_adf19ec08d61f0332e93d6e3450f8c3f0}{Load\+Text}} (string full\+Path)
+\begin{DoxyCompactList}\small\item\em Loads text content from a file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_a3bebb9113bebe7dff23e756ba0a793a0}{Save\+Bytes}} (string full\+Path, byte\mbox{[}$\,$\mbox{]} data)
+\begin{DoxyCompactList}\small\item\em Saves binary data to a file. \end{DoxyCompactList}\item 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_a3003ca57e34fd9151ea3f6598a394fce}{Load\+Bytes}} (string full\+Path)
+\begin{DoxyCompactList}\small\item\em Loads binary data from a file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_a6b23a4d308df09682517d900b51ce975}{Save\+Json$<$ T $>$}} (string full\+Path, T data)
+\begin{DoxyCompactList}\small\item\em Serializes and saves an object as a JSON file. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_ad93aeb9b17ed313981a0a1a74a64e336}{Load\+Json$<$ T $>$}} (string full\+Path)
+\begin{DoxyCompactList}\small\item\em Loads and deserializes a JSON file into an object. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_a6a81a07deb26858fc605a9be3fca9d84}{Generate\+MD5}} (string input)
+\begin{DoxyCompactList}\small\item\em Generates an MD5 hash from the specified string. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_a211ca38ce8136e4a848e876831831f7a}{Generate\+SHA256}} (string input)
+\begin{DoxyCompactList}\small\item\em Generates a SHA256 hash from the specified string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_afaf44e4c2683154a8b91cca86130bf88}\label{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_afaf44e4c2683154a8b91cca86130bf88} 
+static \mbox{\hyperlink{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service}{File\+Manager\+Service}} {\bfseries Instance}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the global \doxylink{namespace_maya_mystic_1_1_file_manager}{File\+Manager} service instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main \doxylink{namespace_maya_mystic_1_1_file_manager}{File\+Manager} service implementation. Provides centralized access to all file operations. 
+
+This service acts as the primary entry point for reading, writing, deleting, serializing, and hashing files. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_a9d7cf73f2c3a17b31ab201242cfe5f50}\index{MayaMystic.FileManager.Core.FileManagerService@{MayaMystic.FileManager.Core.FileManagerService}!DeleteFile@{DeleteFile}}
+\index{DeleteFile@{DeleteFile}!MayaMystic.FileManager.Core.FileManagerService@{MayaMystic.FileManager.Core.FileManagerService}}
+\doxysubsubsection{\texorpdfstring{DeleteFile()}{DeleteFile()}}
+{\footnotesize\ttfamily \label{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_a9d7cf73f2c3a17b31ab201242cfe5f50} 
+bool Maya\+Mystic.\+File\+Manager.\+Core.\+File\+Manager\+Service.\+Delete\+File (\begin{DoxyParamCaption}\item[{string}]{full\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Deletes the target file from disk. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em full\+Path} & Absolute file path.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the file was deleted successfully; otherwise false. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_maya_mystic_1_1_file_manager_1_1_interfaces_1_1_i_file_manager_adc364ef312f5f71bba0c7478565e28c2}{Maya\+Mystic.\+File\+Manager.\+Interfaces.\+IFile\+Manager}}.
+
+\Hypertarget{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_af483d5e9d3384e717f638840fbb6eded}\index{MayaMystic.FileManager.Core.FileManagerService@{MayaMystic.FileManager.Core.FileManagerService}!FileExists@{FileExists}}
+\index{FileExists@{FileExists}!MayaMystic.FileManager.Core.FileManagerService@{MayaMystic.FileManager.Core.FileManagerService}}
+\doxysubsubsection{\texorpdfstring{FileExists()}{FileExists()}}
+{\footnotesize\ttfamily \label{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_af483d5e9d3384e717f638840fbb6eded} 
+bool Maya\+Mystic.\+File\+Manager.\+Core.\+File\+Manager\+Service.\+File\+Exists (\begin{DoxyParamCaption}\item[{string}]{full\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks whether a file exists at the specified path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em full\+Path} & Absolute file path.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the file exists; otherwise false. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_maya_mystic_1_1_file_manager_1_1_interfaces_1_1_i_file_manager_a2138eb69c242b6c9ccb4740a0eea3e1f}{Maya\+Mystic.\+File\+Manager.\+Interfaces.\+IFile\+Manager}}.
+
+\Hypertarget{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_a6a81a07deb26858fc605a9be3fca9d84}\index{MayaMystic.FileManager.Core.FileManagerService@{MayaMystic.FileManager.Core.FileManagerService}!GenerateMD5@{GenerateMD5}}
+\index{GenerateMD5@{GenerateMD5}!MayaMystic.FileManager.Core.FileManagerService@{MayaMystic.FileManager.Core.FileManagerService}}
+\doxysubsubsection{\texorpdfstring{GenerateMD5()}{GenerateMD5()}}
+{\footnotesize\ttfamily \label{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_a6a81a07deb26858fc605a9be3fca9d84} 
+string Maya\+Mystic.\+File\+Manager.\+Core.\+File\+Manager\+Service.\+Generate\+MD5 (\begin{DoxyParamCaption}\item[{string}]{input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generates an MD5 hash from the specified string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Input string.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Generated MD5 hash string.
+\end{DoxyReturn}
+\Hypertarget{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_a211ca38ce8136e4a848e876831831f7a}\index{MayaMystic.FileManager.Core.FileManagerService@{MayaMystic.FileManager.Core.FileManagerService}!GenerateSHA256@{GenerateSHA256}}
+\index{GenerateSHA256@{GenerateSHA256}!MayaMystic.FileManager.Core.FileManagerService@{MayaMystic.FileManager.Core.FileManagerService}}
+\doxysubsubsection{\texorpdfstring{GenerateSHA256()}{GenerateSHA256()}}
+{\footnotesize\ttfamily \label{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_a211ca38ce8136e4a848e876831831f7a} 
+string Maya\+Mystic.\+File\+Manager.\+Core.\+File\+Manager\+Service.\+Generate\+SHA256 (\begin{DoxyParamCaption}\item[{string}]{input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generates a SHA256 hash from the specified string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & Input string.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Generated SHA256 hash string.
+\end{DoxyReturn}
+\Hypertarget{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_a3003ca57e34fd9151ea3f6598a394fce}\index{MayaMystic.FileManager.Core.FileManagerService@{MayaMystic.FileManager.Core.FileManagerService}!LoadBytes@{LoadBytes}}
+\index{LoadBytes@{LoadBytes}!MayaMystic.FileManager.Core.FileManagerService@{MayaMystic.FileManager.Core.FileManagerService}}
+\doxysubsubsection{\texorpdfstring{LoadBytes()}{LoadBytes()}}
+{\footnotesize\ttfamily \label{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_a3003ca57e34fd9151ea3f6598a394fce} 
+byte\mbox{[}$\,$\mbox{]} Maya\+Mystic.\+File\+Manager.\+Core.\+File\+Manager\+Service.\+Load\+Bytes (\begin{DoxyParamCaption}\item[{string}]{full\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loads binary data from a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em full\+Path} & Absolute file path.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Loaded binary data.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_maya_mystic_1_1_file_manager_1_1_interfaces_1_1_i_file_manager_a384468c9cd346ad2cc952e7e1bfb3242}{Maya\+Mystic.\+File\+Manager.\+Interfaces.\+IFile\+Manager}}.
+
+\Hypertarget{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_ad93aeb9b17ed313981a0a1a74a64e336}\index{MayaMystic.FileManager.Core.FileManagerService@{MayaMystic.FileManager.Core.FileManagerService}!LoadJson$<$ T $>$@{LoadJson$<$ T $>$}}
+\index{LoadJson$<$ T $>$@{LoadJson$<$ T $>$}!MayaMystic.FileManager.Core.FileManagerService@{MayaMystic.FileManager.Core.FileManagerService}}
+\doxysubsubsection{\texorpdfstring{LoadJson$<$ T $>$()}{LoadJson< T >()}}
+{\footnotesize\ttfamily \label{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_ad93aeb9b17ed313981a0a1a74a64e336} 
+T Maya\+Mystic.\+File\+Manager.\+Core.\+File\+Manager\+Service.\+Load\+Json$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{full\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loads and deserializes a JSON file into an object. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Target object type.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em full\+Path} & Absolute file path.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Deserialized object instance.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_maya_mystic_1_1_file_manager_1_1_interfaces_1_1_i_file_manager_ab3c452048a9c8bfd850e9cb6f9b8b4cb}{Maya\+Mystic.\+File\+Manager.\+Interfaces.\+IFile\+Manager}}.
+
+\Hypertarget{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_adf19ec08d61f0332e93d6e3450f8c3f0}\index{MayaMystic.FileManager.Core.FileManagerService@{MayaMystic.FileManager.Core.FileManagerService}!LoadText@{LoadText}}
+\index{LoadText@{LoadText}!MayaMystic.FileManager.Core.FileManagerService@{MayaMystic.FileManager.Core.FileManagerService}}
+\doxysubsubsection{\texorpdfstring{LoadText()}{LoadText()}}
+{\footnotesize\ttfamily \label{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_adf19ec08d61f0332e93d6e3450f8c3f0} 
+string Maya\+Mystic.\+File\+Manager.\+Core.\+File\+Manager\+Service.\+Load\+Text (\begin{DoxyParamCaption}\item[{string}]{full\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loads text content from a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em full\+Path} & Absolute file path.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Loaded text content.
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_maya_mystic_1_1_file_manager_1_1_interfaces_1_1_i_file_manager_ae3e7b1ed2034167d64fc12396914338e}{Maya\+Mystic.\+File\+Manager.\+Interfaces.\+IFile\+Manager}}.
+
+\Hypertarget{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_a3bebb9113bebe7dff23e756ba0a793a0}\index{MayaMystic.FileManager.Core.FileManagerService@{MayaMystic.FileManager.Core.FileManagerService}!SaveBytes@{SaveBytes}}
+\index{SaveBytes@{SaveBytes}!MayaMystic.FileManager.Core.FileManagerService@{MayaMystic.FileManager.Core.FileManagerService}}
+\doxysubsubsection{\texorpdfstring{SaveBytes()}{SaveBytes()}}
+{\footnotesize\ttfamily \label{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_a3bebb9113bebe7dff23e756ba0a793a0} 
+void Maya\+Mystic.\+File\+Manager.\+Core.\+File\+Manager\+Service.\+Save\+Bytes (\begin{DoxyParamCaption}\item[{string}]{full\+Path}{, }\item[{byte\mbox{[}$\,$\mbox{]}}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Saves binary data to a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em full\+Path} & Absolute file path.\\
+\hline
+{\em data} & Binary data to save.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_maya_mystic_1_1_file_manager_1_1_interfaces_1_1_i_file_manager_a6652c51277f0552569a22a347ee32829}{Maya\+Mystic.\+File\+Manager.\+Interfaces.\+IFile\+Manager}}.
+
+\Hypertarget{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_a6b23a4d308df09682517d900b51ce975}\index{MayaMystic.FileManager.Core.FileManagerService@{MayaMystic.FileManager.Core.FileManagerService}!SaveJson$<$ T $>$@{SaveJson$<$ T $>$}}
+\index{SaveJson$<$ T $>$@{SaveJson$<$ T $>$}!MayaMystic.FileManager.Core.FileManagerService@{MayaMystic.FileManager.Core.FileManagerService}}
+\doxysubsubsection{\texorpdfstring{SaveJson$<$ T $>$()}{SaveJson< T >()}}
+{\footnotesize\ttfamily \label{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_a6b23a4d308df09682517d900b51ce975} 
+void Maya\+Mystic.\+File\+Manager.\+Core.\+File\+Manager\+Service.\+Save\+Json$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{full\+Path}{, }\item[{T}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Serializes and saves an object as a JSON file. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Object type.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em full\+Path} & Absolute file path.\\
+\hline
+{\em data} & Object data to serialize.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_maya_mystic_1_1_file_manager_1_1_interfaces_1_1_i_file_manager_ab131e6d0b199e25b05ae7002e6bfe1b5}{Maya\+Mystic.\+File\+Manager.\+Interfaces.\+IFile\+Manager}}.
+
+\Hypertarget{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_ab42a683164ab3d0fa490ad3c81e7d9a0}\index{MayaMystic.FileManager.Core.FileManagerService@{MayaMystic.FileManager.Core.FileManagerService}!SaveText@{SaveText}}
+\index{SaveText@{SaveText}!MayaMystic.FileManager.Core.FileManagerService@{MayaMystic.FileManager.Core.FileManagerService}}
+\doxysubsubsection{\texorpdfstring{SaveText()}{SaveText()}}
+{\footnotesize\ttfamily \label{class_maya_mystic_1_1_file_manager_1_1_core_1_1_file_manager_service_ab42a683164ab3d0fa490ad3c81e7d9a0} 
+void Maya\+Mystic.\+File\+Manager.\+Core.\+File\+Manager\+Service.\+Save\+Text (\begin{DoxyParamCaption}\item[{string}]{full\+Path}{, }\item[{string}]{content}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Saves text content to a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em full\+Path} & Absolute file path.\\
+\hline
+{\em content} & Text content to save.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_maya_mystic_1_1_file_manager_1_1_interfaces_1_1_i_file_manager_a252257b0bfe7f5e70c02141c83a223ca}{Maya\+Mystic.\+File\+Manager.\+Interfaces.\+IFile\+Manager}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hpkar/\+One\+Drive/\+Documents/\+Unity/\+Maya\+Mystic-\/\+File\+Manager/\+Runtime/\+Core/File\+Manager\+Service.\+cs\end{DoxyCompactItemize}

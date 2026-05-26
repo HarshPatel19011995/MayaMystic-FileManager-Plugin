@@ -1,0 +1,54 @@
+{
+  "name": "com.mayamystic.filemanager",
+  "version": "1.0.0",
+  "displayName": "MayaMystic FileManager",
+  "description": "Modular and scalable file management framework for Unity. Provides structured file operations including text, JSON, binary handling, hashing utilities, directory management, configurable paths, and reusable runtime storage architecture with Logger integration.",
+  "unity": "2021.3",
+
+  "icon": "icon.png",
+
+  "author": {
+    "name": "Harsh Patel",
+    "company": "MayaMystic",
+    "url": "https://github.com/HarshPatel19011995"
+  },
+
+  "keywords": [
+    "file",
+    "storage",
+    "save",
+    "load",
+    "json",
+    "binary",
+    "cache",
+    "filesystem",
+    "unity",
+    "runtime",
+    "hash",
+    "persistentdata",
+    "download"
+  ],
+
+  "license": "Proprietary",
+
+  "licensesUrl": "https://github.com/HarshPatel19011995/FileManager-Plugin/blob/main/LICENSE.md",
+
+  "samples": [
+    {
+      "displayName": "Basic Usage",
+      "description": "Demonstrates saving/loading text, JSON, binary files, hashing utilities, and runtime file operations.",
+      "path": "Samples~/Basic Usage"
+    }
+  ],
+
+  "documentationUrl": "Documentation~/README.md/",
+
+  "changelogUrl": "https://raw.githubusercontent.com/HarshPatel19011995/FileManager-Plugin/main/CHANGELOG.md",
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HarshPatel19011995/FileManager-Plugin"
+  },
+
+  "homepage": "https://github.com/HarshPatel19011995/FileManager-Plugin"
+}
