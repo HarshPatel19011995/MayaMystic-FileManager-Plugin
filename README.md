@@ -92,7 +92,7 @@ Click
 Paste
 
 <pre>
-[https://github.com/HarshPatel19011995/FileManager-Plugin.git](https://github.com/HarshPatel19011995/MayaMystic-FileManager-Plugin.git#v1.0.0)
+[https://github.com/HarshPatel19011995/MayaMystic-FileManager-Plugin.git#v1.0.0]
 </pre>
 
 <hr>
