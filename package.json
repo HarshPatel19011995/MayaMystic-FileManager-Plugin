@@ -31,7 +31,7 @@
 
   "license": "Proprietary",
 
-  "licensesUrl": "https://github.com/HarshPatel19011995/FileManager-Plugin/blob/main/LICENSE.md",
+  "licensesUrl": "https://github.com/HarshPatel19011995/MayaMystic-FileManager-Plugin/blob/main/LICENSE.md",
 
   "samples": [
     {
@@ -41,14 +41,14 @@
     }
   ],
 
-  "documentationUrl": "https://harshpatel19011995.github.io/MayaMystic-FileManager-Plugin/index.html",
+  "documentationUrl": "https://harshpatel19011995.github.io/MayaMystic-MayaMystic-FileManager-Plugin/index.html",
 
-  "changelogUrl": "https://raw.githubusercontent.com/HarshPatel19011995/FileManager-Plugin/main/CHANGELOG.md",
+  "changelogUrl": "https://raw.githubusercontent.com/HarshPatel19011995/MayaMystic-FileManager-Plugin/main/CHANGELOG.md",
 
   "repository": {
     "type": "git",
-    "url": "https://github.com/HarshPatel19011995/FileManager-Plugin"
+    "url": "https://github.com/HarshPatel19011995/MayaMystic-FileManager-Plugin"
   },
 
-  "homepage": "https://github.com/HarshPatel19011995/FileManager-Plugin"
+  "homepage": "https://github.com/HarshPatel19011995/MayaMystic-FileManager-Plugin"
 }
