@@ -33,6 +33,9 @@
 
   "licensesUrl": "https://github.com/HarshPatel19011995/MayaMystic-FileManager-Plugin/blob/main/LICENSE.md",
 
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.2.2"
+  },
   "samples": [
     {
       "displayName": "Basic Usage",

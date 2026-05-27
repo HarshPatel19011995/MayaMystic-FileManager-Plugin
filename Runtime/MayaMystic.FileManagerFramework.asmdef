@@ -1,7 +1,9 @@
 {
   "name": "MayaMystic.FileManager",
   "rootNamespace": "MayaMystic.FileManager",
-  "references": [],
+  "references": [
+    "Unity.Newtonsoft.Json"
+  ],
   "includePlatforms": [],
   "excludePlatforms": [],
   "allowUnsafeCode": false,
